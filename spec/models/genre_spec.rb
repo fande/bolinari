@@ -7,7 +7,7 @@ describe Genre do
   end
   
   it "should be not create" do
-    Genre.create(:name => "black metal")
-    genre.should_not be_valid
+    genre = Genre.create(:name => "black metal")
+    genre .should_not be_valid
   end
 end
