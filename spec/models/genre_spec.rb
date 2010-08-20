@@ -16,4 +16,9 @@ describe Genre do
     genre_clone = Genre.create(:name => "punk rock")
     genre_clone.should_not be_valid
   end
+  
+  it "should have many artists" do
+    genre = Genre.create(:name => "death metal")  
+    genre.should respond_to(:artists)
+  end
 end
