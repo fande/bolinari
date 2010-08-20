@@ -1,4 +1,12 @@
 Bolinari::Application.routes.draw do
+  resources :musics
+
+  resources :albums
+
+  resources :artists
+
+  resources :genres
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
