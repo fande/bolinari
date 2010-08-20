@@ -33,4 +33,5 @@ group :test, :test do
   gem "rspec"
   gem "rspec-rails", ">= 2.0.0.beta"
   gem "factory_girl"
+  gem "faker"
 end
