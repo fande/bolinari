@@ -10,4 +10,10 @@ describe Genre do
     genre = Genre.create(:name => "")
     genre.should_not be_valid
   end
+  
+  it "should have an unique name" do
+    genre = Genre.create(:name => "punk rock")
+    genre_clone = Genre.create(:name => "punk rock")
+    genre_clone.should_not be_valid
+  end
 end
