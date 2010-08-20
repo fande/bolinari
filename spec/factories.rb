@@ -4,6 +4,7 @@ end
 
 Factory.define :artist do |a|
   a.name Faker::Name.name
+end
 
 Factory.define :album do |g|
   g.name Faker::Lorem.words(2)
