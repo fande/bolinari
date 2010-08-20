@@ -5,8 +5,7 @@ describe Genre do
     genre = Factory.create(:genre)
     genre.should be_valid
   end
-  
-  
+
   it "should not create" do
     genre = Factory.build(:genre, :name => nil)
     genre.save

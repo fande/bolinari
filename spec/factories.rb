@@ -1,4 +1,4 @@
-Factory.define :genre do |g|
+Factory.define(:genre, :class => Genre) do |g|
   g.name Faker::Lorem.words(2)
 end
 
