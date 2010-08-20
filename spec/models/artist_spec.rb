@@ -18,7 +18,7 @@ describe Artist do
   end
 
   it "should have many albums" do
-    artist = Artist.create(:name => "Mayhem", :genre_id => '1')    
+    artist = Artist.create(:name => "Mayhem", :genre_id => '1')
     artist.should respond_to(:albums)
   end
 
