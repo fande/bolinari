@@ -4,7 +4,7 @@ end
 
 Factory.define :artist do |a|
   a.name Faker::Name.name
-  g.artist_id Factory.create(:genre)
+  g.genre_id Factory.create(:genre)
 end
 
 Factory.define :album do |g|
