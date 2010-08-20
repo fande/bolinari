@@ -18,4 +18,14 @@ describe Album do
     #Album.create(:name => "Limp Biskit")
     album.should_not be_valid
   end
+  
+  it "should belong to an artist"
+    album = Factory.create(:album)
+    album.should respond_to(:artist)
+  end
+  
+  it "should have many musics"
+    album = Factory.create(:album)
+    album.should respond_to(:musics)
+  end
 end
