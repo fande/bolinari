@@ -1,10 +1,10 @@
 Factory.define :genre do |g|
-    g.name Faker::Lorem.words(2)
+  g.name Faker::Lorem.words(2)
 end
 
 Factory.define :artist do |a|
   a.name Faker::Name.name
-  g.genre_id Factory.create(:genre)
+  a.genre_id Factory.create(:genre)
 end
 
 Factory.define :album do |g|
